@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aire Fisioterapia</title>
+    <link rel="stylesheet" href="app/css/style.css">
+    <link rel="stylesheet" href="app/css/element-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <div class="logo__img"></div>
+            <h1 class="logo__title color-primary"><a href="index.html">AIRE <span class="title-accent">FISIOTERAPIA</span></a></h1>
+        </section>
+        
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon"><span class="nav-icon"></span></label>
+            
+        <ul class="menu">
+            <li class="menu-item"><a href="about-us.html">QUIENES SOMOS</a></li>
+            <li class="menu-item"><a href="clinica.html">LA CLINICA</a></li>
+            <li class="menu-item"><a href="tratamientos.html">TRATAMIENTOS</a></li>
+            <li class="menu-item"><a href="publicaciones.html">PUBLICACIONES</a></li>
+            <li class="menu-item"><a class="is-active" href="contact.html">CONTACTAR</a></li>
+        </ul>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="flex-container-contact">
+                    <div class="contact-info">
+                        <h2 class="contact-info-title">Información de contacto</h3>
+                        <div class="contact-item"><a href="tel:+34663575011"><img class="contact-icon" src="app/assets/phone.svg"><p>663575011</p></a></div>
+                        <div class="contact-item"><a href="mailto:airefisioterapiaho@gmail.com"><img class="contact-icon" src="app/assets/address.svg"><p>airefisioterapiaho@gmail.com</p></a></div>
+                        <div class="contact-item"><a href="https://goo.gl/maps/zMssJ4PtTJfYVvRX6"><img class="contact-icon" src="app/assets/email.svg"><p>Calle Juan XXIII, nº9, 04600 Huércal-Overa (Almería).</p></a></div>
+                    </div>
+                    <div class="contact-form">
+                        <form>
+                            <label>Nombre<input type="text"></label>
+                            <label>Correo<input type="text"></label>
+                            <label>Asunto<input type="text"></label>
+                            <label>Mensaje<textarea cols="40" rows="10"*></textarea></label>
+                            <input class="button-form" type="submit" value="ENVIAR">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2>LOCALIZACION</h2>
+                <div class="location flex-container">
+                    <img class="location__img" src="app/assets/Logo Centro.jpg" alt="fachada">
+                    <iframe class="location__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.880214929451!2d-1.9474334840844512!3d37.3926649798311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd652ef417b2f31d%3A0x873a45496235f29d!2sCalle%20Juan%20XXIII%2C%209%2C%2004600%20Hu%C3%A9rcal-Overa%2C%20Almer%C3%ADa!5e0!3m2!1ses!2ses!4v1615414073554!5m2!1ses!2ses" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="bg-dark">
+        <div class="container">
+            <div class="footer-box">
+                <div class="footer-card">
+                    <div class="date-app">
+                        <p>Reserva ya tu cita desde nuestra App.</p>
+                        <img class="store" src="app/assets/google store.svg">
+                        <img class="store" src="app/assets/apple store.svg">
+                    </div>
+                    <div class="contact">
+                        <div class="contact-item"><a href="tel:+34663575011"><img class="contact-icon" src="app/assets/phone.svg"><p>663575011</p></a></div>
+                        <div class="contact-item"><a href="mailto:airefisioterapiaho@gmail.com"><img class="contact-icon" src="app/assets/address.svg"><p>airefisioterapiaho@gmail.com</p></a></div>
+                        <div class="contact-item"><a href="https://goo.gl/maps/zMssJ4PtTJfYVvRX6"><img class="contact-icon" src="app/assets/email.svg"><p>Calle Juan XXIII, nº9, 04600 Huércal-Overa (Almería).</p></a></div>
+                    </div>
+                </div>
+                <div class="footer-card">
+                    <h3>SIGUENOS EN REDES SOCIALES</h3>
+                    <div class="rss-icons">
+                        <a href="#"><img class="rss-icon" src="app/assets/facebook-yellow.svg"></a>
+                        <a href="#"><img class="rss-icon" src="app/assets/twitter-yellow.svg"></a>
+                        <a href="#"><img class="rss-icon" src="app/assets/instagram-yellow.svg"></a>
+                    </div>
+                </div>
+                <div class="footer-card">
+                    <h3>HORARIO</h3>
+                    <p class="horary-day">Lunes - Viernes</p>
+                    <p class="horary-hours">10:00 - 14:00</p>
+                    <p class="horary-hours">16:00 - 20:00</p>
+                    <p class="horary-day">Sábado</p>
+                    <p class="horary-hours">10:00 - 14:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark">
+        <p>&copy 2021 - AIRE FISIOTERAPIA</p>
+    </footer>
+</body>
+</html>

@@ -19,7 +19,7 @@
 html {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    font-family: Roboto, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: var(--clr-text);
     font-size: 1.075rem;
 }
@@ -51,17 +51,19 @@ p {
     margin: 0;
 }
 
+h1,
 h2,
 h3 {
-    font-family: serif;
-    line-height: 0.8;
+    font-family: 'Dosis';
+    line-height: 1.1;
 }
 
 h2,
 .author p,
 .footer-card p,
 footer p,
-p {
+p,
+.tratamiento-view h3 {
     text-align: center;
 }
 
@@ -76,10 +78,15 @@ h2 {
     margin-bottom: 1.85em;
 }
 
+.author-quote p {
+    text-align: center;
+}
+
 @media (min-width:1024px) {
     h2,
     h4,
-    p {
+    p,
+    .tratamiento-view h3 {
         text-align: left;
     }
 
@@ -361,6 +368,10 @@ header {
     font-weight: 700;
 }
 
+.italic-text {
+    font-style: italic;
+}
+
 @media (min-width:1248px) {
     header {
         background: #ffffff;
@@ -621,7 +632,11 @@ footer p{
 
 .about-us__text {
     padding-bottom: 2em;
-    text-align: left;
+    text-align: center;
+}
+
+.about-us__text li {
+    list-style-type: none;
 }
 
 .about-us__text p {
@@ -635,6 +650,10 @@ footer p{
     }
 
     .about-us__author p {
+        text-align: left;
+    }
+
+    .about-us__text {
         text-align: left;
     }
 }
@@ -735,10 +754,34 @@ footer p{
     width: 100%;
 }
 
-.tratamiento-intro h2,
-.tratamiento-intro p {
-    text-align: left;
+.tecnica input {
+    display: none;
 }
+
+.tecnica p {
+    display: none;
+}
+
+.tecnica label {
+    cursor: pointer;
+}
+
+.tecnica-one-btn:checked ~ p,
+.tecnica-second-btn:checked ~ p,
+.tecnica-third-btn:checked ~ p,
+.tecnica-quarter-btn:checked ~ p {
+    display: block;
+}
+/*
+.tecnica-one-icon {
+    transition: rotate 300ms ease-in;
+}
+*/
+
+.tecnica-one-btn:checked ~ h3 .tecnica-one-icon {
+    transform: rotate(90deg);
+}
+
 
 /* Publicaciones styles */
 

@@ -133,6 +133,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column; 
+    text-align: center;
 }
 
 .card-content h3 {
@@ -140,7 +141,6 @@
 }
 
 .card-content p {
-    text-align: left;
     height: 58%;
 }
 
